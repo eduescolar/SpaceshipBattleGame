@@ -363,7 +363,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -470,7 +470,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: d7cf68cc5e09872448aef13990aeb902, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -495,7 +495,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidadeDoInimigo: 2
-  laserInimigo: {fileID: 7089444304375626686, guid: 7e804f7a872a2c04298137dcdadf36be, type: 3}
+  laserInimigoo: {fileID: 0}
   localDeDisparo: {fileID: 1297901835}
   tempoEntreLasers: 1
   tempoAtualDosLasers: 0
@@ -702,52 +702,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &526799171 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4801049520447369848, guid: 9175da68afc4d7446a35dc2af2d5b11d, type: 3}
-  m_PrefabInstance: {fileID: 4801049520462193467}
-  m_PrefabAsset: {fileID: 0}
---- !u!60 &526799178
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 526799171}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.39, y: 1.23}
-    newSize: {x: 7.94, y: 11.23}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 1.1949999, y: -0.205}
-      - {x: 1.1949999, y: 0.235}
-      - {x: 1.095, y: 0.39499998}
-      - {x: 0.91499996, y: 0.555}
-      - {x: 0.775, y: 0.615}
-      - {x: -0.84499997, y: 0.615}
-      - {x: -1.175, y: 0.36499998}
-      - {x: -1.1949999, y: 0.235}
-      - {x: -1.1949999, y: -0.225}
-      - {x: -1.095, y: -0.415}
-      - {x: -0.91499996, y: -0.555}
-      - {x: -0.775, y: -0.615}
-      - {x: 0.755, y: -0.615}
-      - {x: 0.815, y: -0.60499996}
-      - {x: 0.98499995, y: -0.505}
-      - {x: 1.135, y: -0.33499998}
 --- !u!1 &605675714
 GameObject:
   m_ObjectHideFlags: 0
@@ -1047,7 +1001,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1276198704}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.54, y: 7.54, z: 0.40263802}
+  m_LocalPosition: {x: 13.964, y: 7.392, z: 0.40263802}
   m_LocalScale: {x: 0.25754, y: 0.25754, z: 0.25754}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1138,7 +1092,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1262,9 +1216,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidadeDoInimigo: 6
-  laserInimigo: {fileID: 7089444304375626686, guid: 7e804f7a872a2c04298137dcdadf36be, type: 3}
+  laserInimigoo: {fileID: 7089444304375626686, guid: 7e804f7a872a2c04298137dcdadf36be, type: 3}
   localDeDisparo: {fileID: 1529553419}
-  tempoEntreLasers: 0.5
+  tempoEntreLasers: 3
   tempoAtualDosLasers: 0
   inimigoAtirador: 1
 --- !u!1 &1294533753
@@ -1574,7 +1528,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1529553418}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.17, y: -1.36, z: 0}
+  m_LocalPosition: {x: -2.41, y: -1.26, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1867,7 +1821,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1960,7 +1914,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidadeDoInimigo: 10
-  laserInimigo: {fileID: 0}
+  laserInimigoo: {fileID: 0}
   localDeDisparo: {fileID: 0}
   tempoEntreLasers: 0
   tempoAtualDosLasers: 0
@@ -2272,60 +2226,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9175da68afc4d7446a35dc2af2d5b11d, type: 3}
---- !u!1001 &7089444305508519752
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 7089444304375626673, guid: 7e804f7a872a2c04298137dcdadf36be, type: 3}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 7089444304375626673, guid: 7e804f7a872a2c04298137dcdadf36be, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -12.895
-      objectReference: {fileID: 0}
-    - target: {fileID: 7089444304375626673, guid: 7e804f7a872a2c04298137dcdadf36be, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.803
-      objectReference: {fileID: 0}
-    - target: {fileID: 7089444304375626673, guid: 7e804f7a872a2c04298137dcdadf36be, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7089444304375626673, guid: 7e804f7a872a2c04298137dcdadf36be, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7089444304375626673, guid: 7e804f7a872a2c04298137dcdadf36be, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7089444304375626673, guid: 7e804f7a872a2c04298137dcdadf36be, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7089444304375626673, guid: 7e804f7a872a2c04298137dcdadf36be, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7089444304375626673, guid: 7e804f7a872a2c04298137dcdadf36be, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7089444304375626673, guid: 7e804f7a872a2c04298137dcdadf36be, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7089444304375626673, guid: 7e804f7a872a2c04298137dcdadf36be, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7089444304375626686, guid: 7e804f7a872a2c04298137dcdadf36be, type: 3}
-      propertyPath: m_Name
-      value: bulleenemy
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 7e804f7a872a2c04298137dcdadf36be, type: 3}

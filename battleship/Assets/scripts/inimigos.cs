@@ -6,7 +6,7 @@ using UnityEngine;
 public class inimigos : MonoBehaviour
 {
     public float velocidadeDoInimigo;
-    public GameObject laserInimigo;
+    public GameObject laserInimigoo;
     public Transform localDeDisparo;
     public float tempoEntreLasers;
     public float tempoAtualDosLasers;
@@ -38,7 +38,7 @@ public class inimigos : MonoBehaviour
         tempoEntreLasers -= Time.deltaTime;
         if (tempoAtualDosLasers <= 0)
         {
-            Instantiate(laserInimigo, localDeDisparo.position, Quaternion.Euler(0f, 0f, 90f));
+            Instantiate(laserInimigoo, localDeDisparo.position, Quaternion.Euler(0f, 0f, 0f));
             tempoAtualDosLasers = tempoEntreLasers;
         }
     }

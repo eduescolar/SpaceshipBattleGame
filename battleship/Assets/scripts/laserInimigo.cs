@@ -15,10 +15,10 @@ public class laserInimigo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        LaserMovimento();
     }
     private void LaserMovimento()
     {
-        transform.Translate();
+        transform.Translate(Vector3.left * laserVelocidade * Time.deltaTime);
     }
 }
