@@ -1475,6 +1475,7 @@ GameObject:
   - component: {fileID: 2021661154}
   - component: {fileID: 2021661153}
   - component: {fileID: 2021661155}
+  - component: {fileID: 2021661156}
   m_Layer: 0
   m_Name: airship
   m_TagString: Player
@@ -1692,6 +1693,21 @@ MonoBehaviour:
   bullet: {fileID: 4801049520447369848, guid: 9175da68afc4d7446a35dc2af2d5b11d, type: 3}
   disparo: {fileID: 314994191}
   laserduplo: 0
+--- !u!114 &2021661156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2021661150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3831b2785f07a2b4e9a1c318be0f2c44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidaMax: 10
+  vidaAtual: 0
+  haEscudo: 0
 --- !u!1001 &4801049520462193467
 PrefabInstance:
   m_ObjectHideFlags: 0

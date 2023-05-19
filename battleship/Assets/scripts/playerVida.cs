@@ -10,7 +10,7 @@ public class playerVida : MonoBehaviour
 
     void Start()
     {
-        
+        vidaAtual = vidaMax;
     }
 
     // Update is called once per frame
@@ -19,11 +19,15 @@ public class playerVida : MonoBehaviour
         
     }
 
-    public void Dano(int danoAReceber)
+    public void Dano(int danoAReceber) 
     {
         if (haEscudo == false)
         {
-            vidaAtual -= 5;
+            vidaAtual -= danoAReceber;
+            if (vidaAtual <= 0)
+            {
+                Debug.Log("GAME OVER");
+            }
         }
     }
     
