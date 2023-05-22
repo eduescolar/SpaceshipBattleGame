@@ -16,9 +16,12 @@ public class inimigos : MonoBehaviour
     public bool inimigoAtirador;
     
     public float velocidadeInimigo;
+
+    public int inimigoVidaMax;
+    public int vidaAtualInimigo;
     void Start()
     {
-        
+        vidaAtualInimigo = inimigoVidaMax;
     }
 
    
@@ -50,6 +53,17 @@ public class inimigos : MonoBehaviour
             tempoAtualDosLasers = 0;
             
             
+        }
+        
+    }
+
+    public void DanoCausadoNoInimigo(int danoRecebido)
+    {
+        vidaAtualInimigo -= danoRecebido;
+
+        if (vidaAtualInimigo <= 0)
+        {
+            Destroy(this.gameObject);
         }
     }
 }
