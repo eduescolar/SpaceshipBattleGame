@@ -19,6 +19,8 @@ public class inimigos : MonoBehaviour
 
     public int inimigoVidaMax;
     public int vidaAtualInimigo;
+
+    public int pontosAseremDados;
     void Start()
     {
         vidaAtualInimigo = inimigoVidaMax;
@@ -63,6 +65,7 @@ public class inimigos : MonoBehaviour
 
         if (vidaAtualInimigo <= 0)
         {
+            GameManager.instance.AumentoDePontuacao(pontosAseremDados);
             Destroy(this.gameObject);
         }
     }
