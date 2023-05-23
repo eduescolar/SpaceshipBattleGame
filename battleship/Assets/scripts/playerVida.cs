@@ -7,7 +7,7 @@ public class playerVida : MonoBehaviour
 {
     public int vidaMax;
     public int vidaAtual;
-    public bool haEscudo;
+    
 
 
     void Start()
@@ -23,13 +23,10 @@ public class playerVida : MonoBehaviour
 
     public void Dano(int danoAReceber) 
     {
-        if (haEscudo == false)
+        vidaAtual -= danoAReceber;
+        if (vidaAtual <= 0)
         {
-            vidaAtual -= danoAReceber;
-            if (vidaAtual <= 0)
-            {
-                Debug.Log("GAME OVER");
-            }
+            Debug.Log("GAME OVER");
         }
     }
     

@@ -21,8 +21,11 @@ public class inimigos : MonoBehaviour
     public int vidaAtualInimigo;
 
     public int pontosAseremDados;
+
+    public bool inimigoAtivo;
     void Start()
     {
+        inimigoAtivo = false;
         vidaAtualInimigo = inimigoVidaMax;
     }
 
@@ -31,11 +34,16 @@ public class inimigos : MonoBehaviour
     { 
         MovimentarInimigo();
         
-        if (inimigoAtirador == true)
+        if (inimigoAtirador == true && inimigoAtivo == true)
         {
             Atirar();
         }
         
+    }
+
+    public void AtivarInimigo()
+    {
+        inimigoAtivo = true;
     }
     
 
@@ -70,3 +78,4 @@ public class inimigos : MonoBehaviour
         }
     }
 }
+

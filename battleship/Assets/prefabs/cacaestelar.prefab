@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8470875954335458883}
   m_Layer: 0
   m_Name: cacaestelar
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8470875954335457726}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 14.56, y: 4.82, z: 0.40263802}
   m_LocalScale: {x: 0.17799, y: 0.17799, z: 0.17799}
   m_ConstrainProportionsScale: 0
@@ -215,7 +215,7 @@ MonoBehaviour:
   tempoMaxEntreLasers: 0
   tempoAtualDosLasers: 0
   inimigoAtirador: 0
-  velocidadeInimigo: 7
+  velocidadeInimigo: 20
   inimigoVidaMax: 2
   vidaAtualInimigo: 0
   pontosAseremDados: 12
