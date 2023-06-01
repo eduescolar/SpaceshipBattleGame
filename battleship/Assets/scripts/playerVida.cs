@@ -14,8 +14,7 @@ public class playerVida : MonoBehaviour
     {
         vidaAtual = vidaMax;
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
         
