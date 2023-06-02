@@ -7,16 +7,10 @@ public class desativador : MonoBehaviour
 {
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("enemy"))
+        if (other.gameObject.CompareTag("enemy") && other.gameObject.CompareTag("meteor"))
         {
             Destroy(other.gameObject);
         }
         
-        
-        //if (other.gameObject.CompareTag("bullet"))
-       // {
-         //   Destroy(other.gameObject);
-        //}
-        //VERIFICA SE O OBJETO É UM INIMIGO OU PROJÉTIL. SE FOR, OS DESTRÓI AO SAIR DO CAMPO DE VISÃO DO JOGADOR.
     }
 }

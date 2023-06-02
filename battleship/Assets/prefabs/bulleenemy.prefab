@@ -136,7 +136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4296097cdafe8c4795c85f7f9840b70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserVelocidade: 13
+  laserVelocidade: 20
   danoDoLaserInimigo: 1
 --- !u!50 &4701261591231704817
 Rigidbody2D:

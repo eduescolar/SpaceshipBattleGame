@@ -58,6 +58,7 @@ public class inimigos : MonoBehaviour
         tempoAtualDosLasers += Time.deltaTime;
         if (tempoAtualDosLasers >= tempoMaxEntreLasers)
         {
+            
             Instantiate(laserInimigoo, localDeDisparo.position, Quaternion.Euler(0f, 0f, 0f));
             
             tempoAtualDosLasers = 0;

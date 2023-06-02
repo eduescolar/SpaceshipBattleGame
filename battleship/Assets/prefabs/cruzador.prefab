@@ -203,10 +203,11 @@ MonoBehaviour:
   tempoMaxEntreLasers: 1
   tempoAtualDosLasers: 0
   inimigoAtirador: 1
-  velocidadeInimigo: 0
+  velocidadeInimigo: 20
   inimigoVidaMax: 20
   vidaAtualInimigo: 0
   pontosAseremDados: 30
+  inimigoAtivo: 0
 --- !u!1 &8528249347271556967
 GameObject:
   m_ObjectHideFlags: 0

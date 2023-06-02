@@ -215,7 +215,8 @@ MonoBehaviour:
   tempoMaxEntreLasers: 0
   tempoAtualDosLasers: 0
   inimigoAtirador: 0
-  velocidadeInimigo: 20
+  velocidadeInimigo: 24
   inimigoVidaMax: 2
   vidaAtualInimigo: 0
   pontosAseremDados: 12
+  inimigoAtivo: 0

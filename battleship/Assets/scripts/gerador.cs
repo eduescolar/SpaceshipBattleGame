@@ -4,33 +4,37 @@ using UnityEngine;
 
 public class gerador : MonoBehaviour
 {
-    public GameObject[] objetosPraraSpawn;
+    public GameObject[] objectsForSpawn;
     public Transform[] pontosdeSpawn;
 
     public float tempoEntreSpawns;
     public float tempoAtualdosSpawns;
+
+    public float tempoMaxEntreSpawns;
+    public float tempoAtualDeSpawns;
     void Start()
     {
-        tempoAtualdosSpawns = tempoEntreSpawns;
+        tempoAtualdosSpawns = tempoMaxEntreSpawns;
     }
 
     
     void Update()
     {
         tempoAtualdosSpawns -= Time.deltaTime;
+
         if (tempoAtualdosSpawns <= 0)
         {
-            invocarObjetos();
+            Spawn();
         }
     }
 
-    private void invocarObjetos()
-    {
-        int ramdomObject = Random.Range(0, objetosPraraSpawn.Length);
-        int pontoAleatorio = Random.Range(0, pontosdeSpawn.Length);
+    private void Spawn()
+    {   //DÁ PARA O OBJETO UM VALOR ENTRE 0 E 3
+        int randomObject = Random.Range(0, objectsForSpawn.Length);
 
-        Instantiate(objetosPraraSpawn[ramdomObject], pontosdeSpawn[pontoAleatorio].position, Quaternion.Euler(0f, 0f, 0f));
-        tempoAtualdosSpawns = tempoEntreSpawns;
-        
+        int pontoAleatório = Random.Range(0, pontosdeSpawn.Length);
+
+        Instantiate(objectsForSpawn[randomObject], pontosdeSpawn[pontoAleatório].position, Quaternion.Euler(0f, 0f, 0f));
+        tempoAtualdosSpawns = tempoMaxEntreSpawns;
     }
 }
