@@ -7,7 +7,7 @@ public class desativador : MonoBehaviour
 {
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("enemy") && other.gameObject.CompareTag("meteor"))
+        if (other.gameObject.CompareTag("enemy"))
         {
             Destroy(other.gameObject);
         }

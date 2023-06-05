@@ -7,7 +7,7 @@ using UnityEngine;
 public class inimigos : MonoBehaviour
 {
     
-    public GameObject laserInimigoo;
+    public GameObject laserInimigo;
     public Transform localDeDisparo;
     
     public float tempoMaxEntreLasers;
@@ -49,7 +49,7 @@ public class inimigos : MonoBehaviour
 
     private void MovimentarInimigo()
     {
-        //movimentar o game object em alguma direção
+            //movimentar o game object em alguma direção
         transform.Translate(Vector3.left * velocidadeInimigo * Time.deltaTime);
     }
 
@@ -59,7 +59,7 @@ public class inimigos : MonoBehaviour
         if (tempoAtualDosLasers >= tempoMaxEntreLasers)
         {
             
-            Instantiate(laserInimigoo, localDeDisparo.position, Quaternion.Euler(0f, 0f, 0f));
+           Instantiate(laserInimigo.gameObject, localDeDisparo.position,Quaternion.Euler(0f, 0f, 0f));
             
             tempoAtualDosLasers = 0;
             

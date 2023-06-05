@@ -200,14 +200,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laserInimigoo: {fileID: 0}
   localDeDisparo: {fileID: 8528249347271556966}
-  tempoMaxEntreLasers: 1
+  tempoMaxEntreLasers: 0.6
   tempoAtualDosLasers: 0
   inimigoAtirador: 1
-  velocidadeInimigo: 20
+  velocidadeInimigo: 15
   inimigoVidaMax: 20
   vidaAtualInimigo: 0
   pontosAseremDados: 30
-  inimigoAtivo: 0
+  inimigoAtivo: 1
 --- !u!1 &8528249347271556967
 GameObject:
   m_ObjectHideFlags: 0

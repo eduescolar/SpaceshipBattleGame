@@ -58,7 +58,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 244376008393937751}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 17.02, y: 7.392, z: 0.40263802}
   m_LocalScale: {x: 0.25754, y: 0.25754, z: 0.25754}
   m_ConstrainProportionsScale: 0
@@ -249,7 +249,7 @@ Rigidbody2D:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 244376008393937751}
   m_BodyType: 0
-  m_Simulated: 1
+  m_Simulated: 0
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
@@ -275,11 +275,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laserInimigoo: {fileID: 7089444304375626686, guid: 7e804f7a872a2c04298137dcdadf36be, type: 3}
   localDeDisparo: {fileID: 244376008139525740}
-  tempoMaxEntreLasers: 2
+  tempoMaxEntreLasers: 0.5
   tempoAtualDosLasers: 0
   inimigoAtirador: 1
-  velocidadeInimigo: 20
+  velocidadeInimigo: 22
   inimigoVidaMax: 5
   vidaAtualInimigo: 0
-  pontosAseremDados: 10
-  inimigoAtivo: 0
+  pontosAseremDados: 15
+  inimigoAtivo: 1
