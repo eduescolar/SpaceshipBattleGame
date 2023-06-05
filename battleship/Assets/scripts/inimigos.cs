@@ -59,7 +59,7 @@ public class inimigos : MonoBehaviour
         if (tempoAtualDosLasers >= tempoMaxEntreLasers)
         {
             
-           Instantiate(laserInimigo.gameObject, localDeDisparo.position,Quaternion.Euler(0f, 0f, 0f));
+//           Instantiate(laserInimigo.gameObject, localDeDisparo.position,Quaternion.Euler(0f, 0f, 0f));
             
             tempoAtualDosLasers = 0;
             
