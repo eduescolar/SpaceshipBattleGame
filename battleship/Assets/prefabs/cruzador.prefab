@@ -198,7 +198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fbef9f62a51b2c4f938755c3019e454, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserInimigoo: {fileID: 0}
+  laserInimigo: {fileID: 3947297165593719064, guid: 8e59c1fadd9e97245b418af10c8933e2, type: 3}
   localDeDisparo: {fileID: 8528249347271556966}
   tempoMaxEntreLasers: 0.6
   tempoAtualDosLasers: 0

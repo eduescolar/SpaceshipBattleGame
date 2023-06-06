@@ -22,10 +22,10 @@ public class inimigos : MonoBehaviour
 
     public int pontosAseremDados;
 
-    public bool inimigoAtivo;
+    public bool inimigoAtivo = true;
     void Start()
     {
-        inimigoAtivo = false;
+        inimigoAtivo = true;
         vidaAtualInimigo = inimigoVidaMax;
     }
 
@@ -49,17 +49,18 @@ public class inimigos : MonoBehaviour
 
     private void MovimentarInimigo()
     {
-            //movimentar o game object em alguma direção
+            //movimentar o game object para esquerda
         transform.Translate(Vector3.left * velocidadeInimigo * Time.deltaTime);
     }
 
     private void Atirar()
     {
         tempoAtualDosLasers += Time.deltaTime;
+        
         if (tempoAtualDosLasers >= tempoMaxEntreLasers)
         {
             
-//           Instantiate(laserInimigo.gameObject, localDeDisparo.position,Quaternion.Euler(0f, 0f, 0f));
+            GameObject laserinimigo1 = Instantiate(laserInimigo, localDeDisparo.position, transform.rotation);
             
             tempoAtualDosLasers = 0;
             
