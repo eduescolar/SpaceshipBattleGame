@@ -25,10 +25,11 @@ public class playerVida : MonoBehaviour
         vidaAtual -= danoAReceber;
         if (vidaAtual <= 0)
         {
+            Destroy(this.gameObject);
             Debug.Log("GAME OVER");
         }
     }
-    
-    
-    
+
+
+
 }

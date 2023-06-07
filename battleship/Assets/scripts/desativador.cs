@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -10,7 +11,14 @@ public class desativador : MonoBehaviour
         if (other.gameObject.CompareTag("enemy"))
         {
             Destroy(other.gameObject);
+            
+        }
+        if (other.gameObject.CompareTag("EnemyBullet"))
+        {
+            Destroy(other.gameObject);
         }
         
     }
+
+    
 }

@@ -25,12 +25,15 @@ public class laserInimigo : MonoBehaviour
     }
     
 
-    private void OnTriggerEnter2D(Collider2D projetil) //DETECTOR DE COLISÃO DO ATAQUE
+    private void OnTriggerEnter2D(Collider2D other) //DETECTOR DE COLISÃO DO ATAQUE
     {
-        if (projetil.gameObject.CompareTag("Player")) //verificar se foi o player que colidiu
+        if (other.gameObject.CompareTag("Player")) //verificar se foi o player que colidiu
         {
-            projetil.gameObject.GetComponent<playerVida>().Dano(danoDoLaserInimigo); //ACESSA O GAMEOBJECT QUE COLIDIU; ACESSA O SCRIPT VIDA DO PLAYER E EM SEGUIDA ATIVA O METODO PARA DAR O DANO 
+            other.gameObject.GetComponent<playerVida>().Dano(danoDoLaserInimigo); //ACESSA O GAMEOBJECT QUE COLIDIU; ACESSA O SCRIPT VIDA DO PLAYER E EM SEGUIDA ATIVA O METODO PARA DAR DANO 
             Destroy(this.gameObject);
         }
+        
     }
+
+    
 }

@@ -6,6 +6,8 @@ public class meteoro : MonoBehaviour
 {
 
     public float velocidadeDoMeteoro;
+
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +21,8 @@ public class meteoro : MonoBehaviour
     }
     private void MovimentarInimigo()
     {
-        //movimentar o game object em alguma direção
+        //movimentar o game object para esquerda
         transform.Translate(Vector3.left * velocidadeDoMeteoro * Time.deltaTime);
     }
+   
 }

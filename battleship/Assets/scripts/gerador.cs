@@ -29,7 +29,7 @@ public class gerador : MonoBehaviour
     }
 
     private void Spawn()
-    {   //DÁ PARA O OBJETO UM VALOR ENTRE 0 E 3
+    {   
         int randomObject = Random.Range(0, objectsForSpawn.Length);
 
         int pontoAleatório = Random.Range(0, pontosdeSpawn.Length);

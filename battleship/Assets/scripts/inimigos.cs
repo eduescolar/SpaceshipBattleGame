@@ -22,6 +22,8 @@ public class inimigos : MonoBehaviour
 
     public int pontosAseremDados;
 
+    public int danoDoImpacto;
+
     public bool inimigoAtivo = true;
     void Start()
     {
@@ -76,6 +78,14 @@ public class inimigos : MonoBehaviour
         if (vidaAtualInimigo <= 0)
         {
             GameManager.instance.AumentoDePontuacao(pontosAseremDados);
+            Destroy(this.gameObject);
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D other) //DETECTOR DE COLISÃO DO ATAQUE
+    {
+        if (other.gameObject.CompareTag("Player")) //verificar se foi o player que colidiu
+        {
+            other.gameObject.GetComponent<playerVida>().Dano(danoDoImpacto); //ACESSA O GAMEOBJECT QUE COLIDIU; ACESSA O SCRIPT VIDA DO PLAYER E EM SEGUIDA ATIVA O METODO PARA DAR DANO 
             Destroy(this.gameObject);
         }
     }

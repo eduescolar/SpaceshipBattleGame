@@ -24,11 +24,11 @@ public class laser : MonoBehaviour
         transform.Translate(Vector3.up * laserVelocidade * Time.deltaTime);
     }
 
-    void OnTriggerEnter2D(Collider2D inimigo)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        if (inimigo.gameObject.CompareTag("enemy"))
+        if (other.gameObject.CompareTag("enemy"))
         {
-            inimigo.gameObject.GetComponent<inimigos>().DanoCausadoNoInimigo(danoCausado);
+            other.gameObject.GetComponent<inimigos>().DanoCausadoNoInimigo(danoCausado);
             Destroy(this.gameObject);
         }
     }

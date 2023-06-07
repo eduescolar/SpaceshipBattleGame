@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1420847322864378648}
   m_Layer: 0
   m_Name: cruzadorBullet
-  m_TagString: bullet
+  m_TagString: EnemyBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -136,5 +136,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4296097cdafe8c4795c85f7f9840b70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserVelocidade: 32
-  danoDoLaserInimigo: 4
+  laserVelocidade: 27
+  danoDoLaserInimigo: 5

@@ -210,13 +210,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fbef9f62a51b2c4f938755c3019e454, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserInimigoo: {fileID: 0}
+  laserInimigo: {fileID: 0}
   localDeDisparo: {fileID: 0}
   tempoMaxEntreLasers: 0
   tempoAtualDosLasers: 0
   inimigoAtirador: 0
-  velocidadeInimigo: 24
+  velocidadeInimigo: 33
   inimigoVidaMax: 2
   vidaAtualInimigo: 0
   pontosAseremDados: 12
+  danoDoImpacto: 10
   inimigoAtivo: 0
