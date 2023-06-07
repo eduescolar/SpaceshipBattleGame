@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         pontuacaoAtual = 0;
-        pontuacao.text = "PONTUAÇÃO: " + pontuacaoAtual;
+        pontuacao.text = "SCORE: " + pontuacaoAtual;
     }
 
     
@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviour
     public void AumentoDePontuacao(int pontosAganhar)
     {
         pontuacaoAtual += pontosAganhar;
-        pontuacao.text = "PONTUAÇÃO: " + pontuacaoAtual;
+        pontuacao.text = "SCORE: " + pontuacaoAtual;
     }
     
     
