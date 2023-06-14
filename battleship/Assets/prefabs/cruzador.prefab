@@ -200,7 +200,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laserInimigo: {fileID: 3947297165593719064, guid: 8e59c1fadd9e97245b418af10c8933e2, type: 3}
   localDeDisparo: {fileID: 8528249347271556966}
-  tempoMaxEntreLasers: 0.9
+  tempoMaxEntreLasers: 1
   tempoAtualDosLasers: 0
   inimigoAtirador: 1
   velocidadeInimigo: 15

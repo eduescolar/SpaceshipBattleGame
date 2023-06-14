@@ -357,7 +357,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2e192ca9a87c88418f36daf65f77a95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadeDoMeteoro: 10
+  velocidadeDoMeteoro: 16
 --- !u!212 &119200697
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -557,7 +557,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2e192ca9a87c88418f36daf65f77a95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadeDoMeteoro: 10
+  velocidadeDoMeteoro: 16
 --- !u!212 &314946236
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -618,7 +618,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 314946234}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 26.377901, y: -6.3408, z: 0}
+  m_LocalPosition: {x: 26.377901, y: -5.67, z: 0}
   m_LocalScale: {x: 4.908256, y: 4.908256, z: 4.908256}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -755,7 +755,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2e192ca9a87c88418f36daf65f77a95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadeDoMeteoro: 10
+  velocidadeDoMeteoro: 14
 --- !u!212 &369845162
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1413,7 +1413,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2e192ca9a87c88418f36daf65f77a95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadeDoMeteoro: 10
+  velocidadeDoMeteoro: 14
 --- !u!212 &974360119
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1474,7 +1474,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 974360116}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 57.7, y: -3.8, z: 0}
+  m_LocalPosition: {x: 63.45, y: -0.07, z: 0}
   m_LocalScale: {x: 3.7666, y: 3.7666, z: 3.7666}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1860,7 +1860,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2e192ca9a87c88418f36daf65f77a95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadeDoMeteoro: 10
+  velocidadeDoMeteoro: 16
 --- !u!212 &1254203157
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1933,6 +1933,64 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6342095245360684572, guid: b9b5a735af26f5c4ba36532b8e51e70f, type: 3}
   m_PrefabInstance: {fileID: 6342095246502650157}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1296310689
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1296310691}
+  - component: {fileID: 1296310690}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &1296310690
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1296310689}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 32.77721, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 84.79629, y: 1}
+  m_EdgeRadius: 0
+--- !u!4 &1296310691
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1296310689}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 40.4, y: 0.9, z: 6.4414062}
+  m_LocalScale: {x: 1.68702, y: 27.313906, z: 1.0884}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 33
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1334221528
 GameObject:
   m_ObjectHideFlags: 0
@@ -2139,7 +2197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce49c3f456323dc4f9dbec20e06bb49c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidade: 0.3
+  velocidade: 0.2
 --- !u!1 &1516673847
 GameObject:
   m_ObjectHideFlags: 0
@@ -2187,7 +2245,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2e192ca9a87c88418f36daf65f77a95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadeDoMeteoro: 10
+  velocidadeDoMeteoro: 14
 --- !u!212 &1516673850
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2302,7 +2360,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2e192ca9a87c88418f36daf65f77a95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadeDoMeteoro: 10
+  velocidadeDoMeteoro: 17
 --- !u!212 &1529464042
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2417,7 +2475,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2e192ca9a87c88418f36daf65f77a95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadeDoMeteoro: 10
+  velocidadeDoMeteoro: 14
 --- !u!212 &1556937248
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2532,7 +2590,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2e192ca9a87c88418f36daf65f77a95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadeDoMeteoro: 10
+  velocidadeDoMeteoro: 14
 --- !u!212 &1618928302
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2647,7 +2705,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2e192ca9a87c88418f36daf65f77a95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadeDoMeteoro: 9
+  velocidadeDoMeteoro: 14
 --- !u!212 &1664195650
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2762,7 +2820,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2e192ca9a87c88418f36daf65f77a95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadeDoMeteoro: 10
+  velocidadeDoMeteoro: 14
 --- !u!212 &1664697118
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2983,7 +3041,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2e192ca9a87c88418f36daf65f77a95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadeDoMeteoro: 10
+  velocidadeDoMeteoro: 14
 --- !u!212 &1747287825
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3044,7 +3102,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1747287822}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 82.200005, y: -6.4, z: 0}
+  m_LocalPosition: {x: 82.200005, y: -4.69, z: 0}
   m_LocalScale: {x: 3.7666, y: 3.7666, z: 3.7666}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3129,7 +3187,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2e192ca9a87c88418f36daf65f77a95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadeDoMeteoro: 10
+  velocidadeDoMeteoro: 14
 --- !u!212 &1895834691
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3190,7 +3248,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1895834688}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 67.30001, y: -8.700001, z: 0}
+  m_LocalPosition: {x: 67.30001, y: -7.66, z: 0}
   m_LocalScale: {x: 2.802727, y: 2.802727, z: 2.802727}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3244,7 +3302,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2e192ca9a87c88418f36daf65f77a95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadeDoMeteoro: 9
+  velocidadeDoMeteoro: 14
 --- !u!212 &2020620279
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3305,7 +3363,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2020620276}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 66.0223, y: 8.6401, z: 0}
+  m_LocalPosition: {x: 66.0223, y: 6.9, z: 0}
   m_LocalScale: {x: 6.316067, y: 6.316067, z: 6.316067}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3556,7 +3614,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeBar: {fileID: 432264734}
-  vidaMax: 25
+  vidaMax: 30
   vidaAtual: 0
 --- !u!1 &2135264699
 GameObject:
@@ -3605,7 +3663,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2e192ca9a87c88418f36daf65f77a95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadeDoMeteoro: 10
+  velocidadeDoMeteoro: 14
 --- !u!212 &2135264702
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3720,7 +3778,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2e192ca9a87c88418f36daf65f77a95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadeDoMeteoro: 9
+  velocidadeDoMeteoro: 16
 --- !u!212 &2139843898
 SpriteRenderer:
   m_ObjectHideFlags: 0
