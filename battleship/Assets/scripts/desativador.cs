@@ -17,8 +17,15 @@ public class desativador : MonoBehaviour
         {
             Destroy(other.gameObject);
         }
+
         
     }
 
-    
+    private void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.CompareTag("meteor"))
+        {
+            Destroy(col.gameObject);
+        }
+    }
 }

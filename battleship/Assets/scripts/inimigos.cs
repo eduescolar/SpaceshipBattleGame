@@ -29,7 +29,7 @@ public class inimigos : MonoBehaviour
 
     void Start()
     {
-        inimigoAtivo = true;
+        //inimigoAtivo = true;
         vidaAtualInimigo = inimigoVidaMax;
     }
 
@@ -57,14 +57,15 @@ public class inimigos : MonoBehaviour
         transform.Translate(Vector3.left * velocidadeInimigo * Time.deltaTime);
     }
 
-    private void Atirar()
+    public void Atirar()
     {
         tempoAtualDosLasers += Time.deltaTime;
 
         if (tempoAtualDosLasers >= tempoMaxEntreLasers)
         {
 
-            GameObject laserinimigo1 = Instantiate(laserInimigo, localDeDisparo.position, transform.rotation);
+            //GameObject laserinimigo1 =
+            Instantiate(laserInimigo, localDeDisparo.position, transform.rotation);
 
             tempoAtualDosLasers = 0;
 
@@ -88,8 +89,7 @@ public class inimigos : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player")) //verificar se foi o player que colidiu
         {
-            other.gameObject.GetComponent<playerVida>()
-                .Dano(danoDoImpacto); //ACESSA O GAMEOBJECT QUE COLIDIU; ACESSA O SCRIPT VIDA DO PLAYER E EM SEGUIDA ATIVA O METODO PARA DAR DANO 
+            other.gameObject.GetComponent<playerVida>().Dano(danoDoImpacto); //ACESSA O GAMEOBJECT QUE COLIDIU; ACESSA O SCRIPT VIDA DO PLAYER E EM SEGUIDA ATIVA O METODO PARA DAR DANO 
             Destroy(this.gameObject);
         }
 
