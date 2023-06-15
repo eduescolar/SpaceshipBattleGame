@@ -29,7 +29,7 @@ public class inimigos : MonoBehaviour
 
     void Start()
     {
-        //inimigoAtivo = true;
+        
         vidaAtualInimigo = inimigoVidaMax;
     }
 

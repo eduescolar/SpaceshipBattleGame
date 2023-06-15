@@ -1345,7 +1345,6 @@ MonoBehaviour:
   tempoEntreSpawns: 0.7
   tempoAtualdosSpawns: 0
   tempoMaxEntreSpawns: 0.7
-  tempoAtualDeSpawns: 0
 --- !u!4 &888203777
 Transform:
   m_ObjectHideFlags: 0
@@ -3341,7 +3340,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2021661150}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.71, y: -9.16, z: 0.3867821}
+  m_LocalPosition: {x: -13.53, y: -9.16, z: 0.3867821}
   m_LocalScale: {x: 0.30312464, y: 0.30312464, z: 0.30312464}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3538,7 +3537,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78ea0d8f69514924c9ae661215aaa061, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadedaNave: 18
+  velocidadedaNave: 19
   origidbody: {fileID: 2021661153}
   bullet: {fileID: 4801049520447369848, guid: 9175da68afc4d7446a35dc2af2d5b11d, type: 3}
   disparo: {fileID: 314994191}
@@ -3556,7 +3555,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeBar: {fileID: 432264734}
-  vidaMax: 30
+  vidaMax: 45
   vidaAtual: 0
 --- !u!1 &2135264699
 GameObject:

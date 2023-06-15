@@ -9,7 +9,7 @@ public class meteoro : MonoBehaviour
     public float velocidadeDoMeteoro;
     
 
-    // Update is called once per frame
+    
     void Update()
     {
         MovimentarInimigo();

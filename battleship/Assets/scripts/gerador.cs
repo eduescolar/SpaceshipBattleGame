@@ -11,7 +11,7 @@ public class gerador : MonoBehaviour
     public float tempoAtualdosSpawns;
 
     public float tempoMaxEntreSpawns;
-    public float tempoAtualDeSpawns;
+    //public float tempoAtualDeSpawns;
     void Start()
     {
         tempoAtualdosSpawns = tempoMaxEntreSpawns;
