@@ -64,7 +64,7 @@ public class inimigos : MonoBehaviour
         if (tempoAtualDosLasers >= tempoMaxEntreLasers)
         {
 
-            //GameObject laserinimigo1 =
+            
             Instantiate(laserInimigo, localDeDisparo.position, transform.rotation);
 
             tempoAtualDosLasers = 0;

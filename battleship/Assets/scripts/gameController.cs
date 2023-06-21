@@ -22,6 +22,7 @@ public class gameController : MonoBehaviour
     {
         MovimentoJogador();
         AtirarLaser();
+        
     }
 
     private void MovimentoJogador()
