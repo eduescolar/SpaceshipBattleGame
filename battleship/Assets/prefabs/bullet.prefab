@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6352424260564653213}
   m_Layer: 0
   m_Name: bullet
-  m_TagString: Untagged
+  m_TagString: bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -120,8 +120,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcbe2086e0b2efd438d315f1ccd87a12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserVelocidade: 15
-  danoCausado: 5
+  laserVelocidade: 35
+  danoCausado: 3
 --- !u!60 &6352424260564653213
 PolygonCollider2D:
   m_ObjectHideFlags: 0
