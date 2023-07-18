@@ -8,6 +8,10 @@ public class playerVida : MonoBehaviour
     public Slider lifeBar;
     public int vidaMax;
     public int vidaAtual;
+    public bool haEscudo;
+    public GameObject escudoDoPlayer;
+    public int escudoVidaMax;
+    public int escudoVidaAtual;
     
 
 
@@ -18,6 +22,10 @@ public class playerVida : MonoBehaviour
         lifeBar.maxValue = vidaMax;
 
         lifeBar.value = vidaAtual;
+        
+        escudoDoPlayer.SetActive(true);
+        
+        escudoVidaAtual = escudoVidaMax;
     }
     
     void Update()
@@ -25,16 +33,44 @@ public class playerVida : MonoBehaviour
         
     }
 
+    public void EscudoActive()
+    {
+        escudoDoPlayer.SetActive(true);
+        haEscudo = true;
+
+        
+    }
+
+    public void PoweUpVida(int vidaExtra)
+    {
+        if (vidaAtual + vidaExtra <= vidaMax)
+        {
+            vidaAtual += vidaExtra; //parei aqui!!
+        }
+    }
+
     public void Dano(int danoAReceber) 
     {
-        vidaAtual -= danoAReceber;
-        
-        lifeBar.value = vidaAtual;
-        
-        if (vidaAtual <= 0)
+        if (haEscudo == false)
         {
-            Destroy(this.gameObject);
-            Debug.Log("GAME OVER");
+            vidaAtual -= danoAReceber;
+                    
+            lifeBar.value = vidaAtual;
+                    
+            if (vidaAtual <= 0)
+            {
+                Destroy(this.gameObject);
+                Debug.Log("GAME OVER");
+            }
+        }
+        else
+        {
+            escudoVidaAtual -= danoAReceber;
+            if (escudoVidaAtual <= 0)
+            {
+                escudoDoPlayer.SetActive(false);
+                haEscudo = false;
+            }
         }
     }
 

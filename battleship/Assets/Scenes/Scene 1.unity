@@ -1122,7 +1122,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 986.4171, y: 153.7869}
+  m_SizeDelta: {x: 986.4171, y: 153.78687}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &432264734
 MonoBehaviour:
@@ -2176,7 +2176,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: -0.2919922, y: 0.06480408}
+  m_AnchoredPosition: {x: -0.2919922, y: 0.064819336}
   m_SizeDelta: {x: -780.7921, y: -25.4021}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1422742184
@@ -2233,7 +2233,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 532185bd6fe78504896c1892397c6e2d, type: 2}
+  - {fileID: 2100000, guid: 35164a294326e2d4a877df1d25679262, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3710,6 +3710,10 @@ MonoBehaviour:
   lifeBar: {fileID: 432264734}
   vidaMax: 45
   vidaAtual: 0
+  haEscudo: 1
+  escudoDoPlayer: {fileID: 11166447}
+  escudoVidaMax: 45
+  escudoVidaAtual: 0
 --- !u!1 &2135264699
 GameObject:
   m_ObjectHideFlags: 0
