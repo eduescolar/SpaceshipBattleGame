@@ -33,20 +33,34 @@ public class playerVida : MonoBehaviour
         
     }
 
-    public void EscudoActive()
+    public void EscudoActive(int escudoExtra)
     {
         escudoDoPlayer.SetActive(true);
         haEscudo = true;
+        if (escudoVidaAtual + escudoExtra <= escudoVidaMax)
+        {
+            escudoVidaAtual += escudoExtra;
+        }
+        else
+        {
+            escudoVidaAtual = escudoVidaMax;
+        }
 
         
     }
 
-    public void PoweUpVida(int vidaExtra)
+    public void PowerUpVida(int vidaextra)
     {
-        if (vidaAtual + vidaExtra <= vidaMax)
+        if (vidaAtual + vidaextra <= vidaMax)
         {
-            vidaAtual += vidaExtra; //parei aqui!!
+            vidaAtual += vidaextra; 
         }
+        else
+        {
+            vidaAtual = vidaMax;
+        }
+
+        lifeBar.value = vidaAtual;
     }
 
     public void Dano(int danoAReceber) 
