@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class playerVida : MonoBehaviour
 {
     public Slider lifeBar;
+    public Slider shieldBar;
     public int vidaMax;
     public int vidaAtual;
     public bool haEscudo;
@@ -22,6 +23,10 @@ public class playerVida : MonoBehaviour
         lifeBar.maxValue = vidaMax;
 
         lifeBar.value = vidaAtual;
+
+        shieldBar.maxValue = escudoVidaMax;
+
+        //shieldBar.value = escudoVidaAtual;
         
         escudoDoPlayer.SetActive(true);
         
@@ -35,6 +40,7 @@ public class playerVida : MonoBehaviour
 
     public void EscudoActive(int escudoExtra)
     {
+        shieldBar.value = escudoVidaAtual;
         escudoDoPlayer.SetActive(true);
         haEscudo = true;
         if (escudoVidaAtual + escudoExtra <= escudoVidaMax)
@@ -46,7 +52,9 @@ public class playerVida : MonoBehaviour
             escudoVidaAtual = escudoVidaMax;
         }
 
-        
+        shieldBar.value = escudoVidaAtual;
+
+
     }
 
     public void PowerUpVida(int vidaextra)
@@ -80,6 +88,7 @@ public class playerVida : MonoBehaviour
         else
         {
             escudoVidaAtual -= danoAReceber;
+            shieldBar.value = escudoVidaAtual;
             if (escudoVidaAtual <= 0)
             {
                 escudoDoPlayer.SetActive(false);
@@ -87,6 +96,7 @@ public class playerVida : MonoBehaviour
             }
         }
     }
+    
 
 
 
