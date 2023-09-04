@@ -51,7 +51,7 @@ public class inimigos : MonoBehaviour
     }
 
 
-    private void MovimentarInimigo()
+    public void MovimentarInimigo()
     {
         //movimentar o game object para esquerda
         transform.Translate(Vector3.left * velocidadeInimigo * Time.deltaTime);
