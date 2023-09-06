@@ -7,6 +7,10 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public int pontuacaoAtual;
+    public GameObject painelDeGameover;
+    public Text textoDeGameover;
+    public Text textoDeHighScore;
+    public Text textoDePontuacaoFinal;
     public static GameManager instance;
     public Text pontuacao;
 
@@ -18,6 +22,7 @@ public class GameManager : MonoBehaviour
     
     void Start()
     {
+        Time.timeScale = 1f;
         pontuacaoAtual = 0;
         pontuacao.text = "SCORE: " + pontuacaoAtual;
     }
@@ -33,7 +38,12 @@ public class GameManager : MonoBehaviour
         pontuacaoAtual += pontosAganhar;
         pontuacao.text = "SCORE: " + pontuacaoAtual;
     }
-    
-    
+
+    public void GameOver()
+    {
+        Time.timeScale = 0f;
+        painelDeGameover.SetActive(true);
+        textoDePontuacaoFinal.text = "SCORE: " + pontuacaoAtual;
+    }
     
 }

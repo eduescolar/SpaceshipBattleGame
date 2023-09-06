@@ -31,5 +31,12 @@ public class laser : MonoBehaviour
             other.gameObject.GetComponent<inimigos>().DanoCausadoNoInimigo(danoCausado);
             Destroy(this.gameObject);
         }
+
+        if (other.gameObject.CompareTag("meteor"))
+        {
+            Destroy(other.gameObject);
+            Destroy(this.gameObject);
+        }
     }
+    
 }

@@ -85,6 +85,7 @@ public class playerVida : MonoBehaviour
             if (vidaAtual <= 0)
             {
                 Destroy(this.gameObject);
+                GameManager.instance.GameOver();
                 Debug.Log("GAME OVER");
             }
         }
