@@ -24,10 +24,7 @@ public class playerVida : MonoBehaviour
         lifeBar.maxValue = vidaMax;
 
         lifeBar.value = vidaAtual;
-
-        //shieldBar.maxValue = escudoVidaAtual;
-
-        //shieldBar.value = escudoVidaAtual;
+        
         shieldBar.enabled = false;
         
         escudoDoPlayer.SetActive(false);
