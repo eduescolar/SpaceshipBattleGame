@@ -10,11 +10,11 @@ public class gameController : MonoBehaviour
     public Rigidbody2D origidbody;
     public GameObject bullet;
     public Transform disparo;
-    public bool laserduplo;
+    public bool laser;
    
     void Start()
     {
-        laserduplo = false;
+        laser = false;
     }
 
     
@@ -35,7 +35,7 @@ public class gameController : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1"))
         {
-            if (laserduplo == false)
+            if (laser == false)
             {
                 Instantiate(bullet, disparo.position, disparo.rotation);
             }

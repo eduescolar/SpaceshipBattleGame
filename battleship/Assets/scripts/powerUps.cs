@@ -10,7 +10,7 @@ public class powerUps : MonoBehaviour
 
     public bool powerUpVida;
 
-    public bool powerUpMunicao;
+    public bool powerUpRaio;
 
 
     public int vidaExtra;
@@ -24,7 +24,7 @@ public class powerUps : MonoBehaviour
             {
                 other.gameObject.GetComponent<playerVida>().EscudoActive(escudoExtra);
             }
-            if(powerUpMunicao == true)
+            if(powerUpRaio == true)
             {
                 
             }
