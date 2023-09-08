@@ -4,12 +4,15 @@ using System.Collections.Generic;
 using System.Security.Cryptography.X509Certificates;
 using Unity.VisualScripting;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class inimigos : MonoBehaviour
 {
 
     public GameObject laserInimigo;
     public Transform localDeDisparo;
+
+    public GameObject itemParaDropar;
 
     public float tempoMaxEntreLasers;
     public float tempoAtualDosLasers;
@@ -22,6 +25,7 @@ public class inimigos : MonoBehaviour
     public int vidaAtualInimigo;
 
     public int pontosAseremDados;
+    public int chanceParaDrop;
 
     public int danoDoImpacto;
 
@@ -81,6 +85,13 @@ public class inimigos : MonoBehaviour
         if (vidaAtualInimigo <= 0)
         {
             GameManager.instance.AumentoDePontuacao(pontosAseremDados);
+
+            int numeroaleatorio = Random.Range(0, 100);
+            if (numeroaleatorio <= chanceParaDrop)
+            {
+                Instantiate(itemParaDropar, transform.position, Quaternion.Euler(0f, 0f, 0f));
+            }
+            
             Destroy(this.gameObject);
         }
     }

@@ -133,7 +133,7 @@ PolygonCollider2D:
       - {x: 2.6699998, y: 2.165}
       - {x: 2.12, y: 2.155}
       - {x: 2.11, y: 2.165}
-      - {x: 1.8, y: 2.175}
+      - {x: 1.853763, y: 3.0562832}
       - {x: 1.3399999, y: 2.195}
       - {x: 0.94, y: 2.205}
       - {x: 0.93, y: 2.185}
@@ -162,6 +162,7 @@ PolygonCollider2D:
       - {x: 0.81, y: -0.315}
       - {x: 0.89, y: -0.39499998}
       - {x: 0.95, y: -0.42499998}
+      - {x: 1.7280512, y: -1.3709879}
       - {x: 3.6699998, y: -0.42499998}
       - {x: 3.77, y: -0.355}
       - {x: 3.87, y: -0.195}
@@ -200,6 +201,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laserInimigo: {fileID: 3947297165593719064, guid: 8e59c1fadd9e97245b418af10c8933e2, type: 3}
   localDeDisparo: {fileID: 8528249347271556966}
+  itemParaDropar: {fileID: 6557384754367053146, guid: dc33e1f7743f3da4b95757f335c2309c, type: 3}
   tempoMaxEntreLasers: 1
   tempoAtualDosLasers: 0
   inimigoAtirador: 1
@@ -207,8 +209,9 @@ MonoBehaviour:
   inimigoVidaMax: 20
   vidaAtualInimigo: 0
   pontosAseremDados: 30
+  chanceParaDrop: 50
   danoDoImpacto: 5
-  inimigoAtivo: 1
+  inimigoAtivo: 0
 --- !u!1 &8528249347271556967
 GameObject:
   m_ObjectHideFlags: 0

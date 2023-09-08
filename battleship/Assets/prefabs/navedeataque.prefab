@@ -200,11 +200,12 @@ PolygonCollider2D:
       - {x: 1.0849999, y: 1.345}
       - {x: 0.955, y: 1.355}
       - {x: -0.655, y: 1.355}
-      - {x: -0.745, y: 1.345}
+      - {x: -0.8542241, y: 3.1580737}
       - {x: -1.025, y: 1.295}
       - {x: -1.275, y: 1.2049999}
       - {x: -1.395, y: 1.135}
       - {x: -1.665, y: 0.98499995}
+      - {x: -1.712983, y: 1.2151504}
       - {x: -1.8149999, y: 0.885}
       - {x: -1.895, y: 0.825}
       - {x: -2.115, y: 0.635}
@@ -237,6 +238,7 @@ PolygonCollider2D:
       - {x: -1.675, y: -2.195}
       - {x: -1.5749999, y: -2.225}
       - {x: -1.525, y: -2.235}
+      - {x: -0.8300659, y: -4.6378694}
       - {x: 1.8149999, y: -2.235}
       - {x: 1.9649999, y: -2.205}
       - {x: 2.135, y: -2.095}
@@ -275,6 +277,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laserInimigo: {fileID: 7089444304375626686, guid: 7e804f7a872a2c04298137dcdadf36be, type: 3}
   localDeDisparo: {fileID: 6342095245191863422}
+  itemParaDropar: {fileID: 316476805356552511, guid: 6e8de7cce43b21b498ce7e0e7902f618, type: 3}
   tempoMaxEntreLasers: 0.8
   tempoAtualDosLasers: 0
   inimigoAtirador: 1
@@ -282,5 +285,6 @@ MonoBehaviour:
   inimigoVidaMax: 5
   vidaAtualInimigo: 0
   pontosAseremDados: 15
-  danoDoImpacto: 5
+  chanceParaDrop: 40
+  danoDoImpacto: 15
   inimigoAtivo: 1

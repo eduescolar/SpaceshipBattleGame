@@ -145,7 +145,8 @@ PolygonCollider2D:
       - {x: 1.8610238, y: 1.7675949}
       - {x: 1.2378793, y: 1.7675949}
       - {x: 1.2205697, y: 1.7849046}
-      - {x: -0.33729148, y: 1.7849046}
+      - {x: 1.6795152, y: 4.1703367}
+      - {x: -0.33729148, y: 4.262976}
       - {x: -0.47576803, y: 1.7675949}
       - {x: -0.5276967, y: 1.7502854}
       - {x: -0.6142446, y: 1.7156663}
@@ -167,15 +168,16 @@ PolygonCollider2D:
       - {x: -2.691393, y: -0.5691968}
       - {x: -2.3971303, y: -0.7076734}
       - {x: -2.0509388, y: -0.7942212}
-      - {x: -1.7912953, y: -0.86345947}
+      - {x: -1.8375888, y: -0.86345947}
       - {x: -1.6355091, y: -0.8980786}
       - {x: -1.0816029, y: -1.1750318}
       - {x: -0.7873403, y: -1.2961987}
       - {x: -0.6315541, y: -1.365437}
-      - {x: -0.2680532, y: -1.4346752}
-      - {x: 0.42432955, y: -1.4346752}
-      - {x: 0.5801157, y: -1.4173657}
-      - {x: 0.8570688, y: -1.365437}
+      - {x: -0.29124272, y: -3.889587}
+      - {x: 1.618005, y: -4.4596415}
+      - {x: 2.485539, y: -4.2601395}
+      - {x: 2.2012815, y: -3.362767}
+      - {x: 3.3119855, y: -3.1024032}
       - {x: 1.1340219, y: -1.2961987}
 --- !u!50 &8470875954335457725
 Rigidbody2D:
@@ -212,12 +214,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laserInimigo: {fileID: 0}
   localDeDisparo: {fileID: 0}
+  itemParaDropar: {fileID: 3048421975450097875, guid: 5244a21805beaf44b8fa118f93bb3d55, type: 3}
   tempoMaxEntreLasers: 0
   tempoAtualDosLasers: 0
   inimigoAtirador: 0
   velocidadeInimigo: 33
   inimigoVidaMax: 2
   vidaAtualInimigo: 0
-  pontosAseremDados: 12
-  danoDoImpacto: 10
+  pontosAseremDados: 20
+  chanceParaDrop: 50
+  danoDoImpacto: 12
   inimigoAtivo: 0

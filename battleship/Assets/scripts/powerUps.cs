@@ -15,6 +15,8 @@ public class powerUps : MonoBehaviour
 
     public int vidaExtra;
     public int escudoExtra;
+    public int energiaExtra;
+    public int energiaDoRaio;
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -26,7 +28,7 @@ public class powerUps : MonoBehaviour
             }
             if(powerUpRaio == true)
             {
-                
+                other.gameObject.GetComponent<RaioLaser>().PowerUpRaio(energiaExtra);
             }
             if (powerUpVida == true)
             {
