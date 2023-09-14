@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -19,7 +20,7 @@ public class GameManager : MonoBehaviour
         instance = this;
     }
 
-    
+
     void Start()
     {
         Time.timeScale = 1f;
@@ -27,10 +28,13 @@ public class GameManager : MonoBehaviour
         pontuacao.text = "SCORE: " + pontuacaoAtual;
     }
 
-    
+
     void Update()
     {
-        
+       // if (pontuacaoAtual >= 15)
+      //  {
+      //      TrocarDeCena();
+       // }
     }
 
     public void AumentoDePontuacao(int pontosAganhar)
@@ -45,12 +49,16 @@ public class GameManager : MonoBehaviour
         painelDeGameover.SetActive(true);
         textoDePontuacaoFinal.text = "SCORE: " + pontuacaoAtual;
 
-        if(pontuacaoAtual > PlayerPrefs.GetInt("highscore"))
+        if (pontuacaoAtual > PlayerPrefs.GetInt("highscore"))
         {
             PlayerPrefs.SetInt("highscore", pontuacaoAtual);
         }
 
         textoDeHighScore.text = "HIGHSCORE: " + PlayerPrefs.GetInt("highscore");
     }
-    
+    void AtivarNaveMae()
+    {
+        
+    }
+
 }
