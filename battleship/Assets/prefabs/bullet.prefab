@@ -122,6 +122,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laserVelocidade: 35
   danoCausado: 10
+  dano_causado: 10
 --- !u!60 &6352424260564653213
 PolygonCollider2D:
   m_ObjectHideFlags: 0

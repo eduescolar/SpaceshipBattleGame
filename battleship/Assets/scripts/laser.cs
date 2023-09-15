@@ -8,6 +8,7 @@ public class laser : MonoBehaviour
     public float laserVelocidade;
 
     public int danoCausado;
+    public int dano_causado;
     void Start()
     {
         
@@ -29,6 +30,7 @@ public class laser : MonoBehaviour
         if (other.gameObject.CompareTag("enemy"))
         {
             other.gameObject.GetComponent<inimigos>().DanoCausadoNoInimigo(danoCausado);
+            other.gameObject.GetComponent<navemae>().DanoSofrido(dano_causado);
             Destroy(this.gameObject);
         }
 

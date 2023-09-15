@@ -17,15 +17,15 @@ public class navemae : MonoBehaviour
     public int mae_vida_Max;
     public int mae_vida_atual;
     public Slider barra_de_vida_da_mamae;
-    
-    barra_de_vida_da_mamae.maxValue = vidaMax;
 
-    lifeBar.value = vidaAtual;
-    
     void Start()
     {
         mae_vida_atual = mae_vida_Max;
-    }
+        barra_de_vida_da_mamae.maxValue = mae_vida_Max;
+        
+        barra_de_vida_da_mamae.value = mae_vida_atual;
+        
+    } 
 
     // Update is called once per frame
     void Update()
@@ -53,6 +53,16 @@ public class navemae : MonoBehaviour
     public void Mae_movimento()
     {
         transform.Translate(Vector3.left * velocidade_mae * Time.deltaTime);
+    }
+
+    public void DanoSofrido(int dano_sofrido)
+    {
+        mae_vida_atual -= dano_sofrido;
+
+        if (mae_vida_atual <= 0)
+        {
+            Destroy(this.gameObject);
+        }
     }
     
 }
