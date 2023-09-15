@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class navemae : MonoBehaviour
 {
@@ -8,14 +10,17 @@ public class navemae : MonoBehaviour
     public Transform Ponto_de_Disparo_2;
     public GameObject mae_bullet;
     public int velocidade_mae;
-    
-   
+
     public float tempo_Atual_Dos_bullets;
     public float tempo_entre_bullets;
     
     public int mae_vida_Max;
     public int mae_vida_atual;
+    public Slider barra_de_vida_da_mamae;
     
+    barra_de_vida_da_mamae.maxValue = vidaMax;
+
+    lifeBar.value = vidaAtual;
     
     void Start()
     {
