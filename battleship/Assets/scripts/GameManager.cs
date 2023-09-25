@@ -31,10 +31,13 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-       // if (pontuacaoAtual >= 15)
-      //  {
-      //      TrocarDeCena();
-       // }
+        if (Input.GetKeyDown(KeyCode.Escape))
+            Quit();
+    }
+    
+    public void Quit()
+    {
+        Application.Quit();
     }
 
     public void AumentoDePontuacao(int pontosAganhar)
