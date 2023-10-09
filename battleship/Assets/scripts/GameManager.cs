@@ -17,15 +17,26 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        instance = this;
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(this.gameObject);
+        }
+        else
+        {
+            Destroy(this.gameObject);
+        }
+        
     }
 
 
     void Start()
     {
+        SceneManager.LoadScene("menu");
         Time.timeScale = 1f;
         pontuacaoAtual = 0;
         pontuacao.text = "SCORE: " + pontuacaoAtual;
+        
     }
 
 
@@ -59,9 +70,22 @@ public class GameManager : MonoBehaviour
 
         textoDeHighScore.text = "HIGHSCORE: " + PlayerPrefs.GetInt("highscore");
     }
-    void AtivarNaveMae()
+    
+    [SerializeField] private string Scene1;
+    [SerializeField] private string GUI;
+    [SerializeField] private string menu;
+    [SerializeField] private GameObject player;
+    [SerializeField] private GameObject playerstart;
+
+    public void LoadScene()
     {
+        SceneManager.LoadScene(GUI);
         
+        SceneManager.LoadSceneAsync("Scene 1", LoadSceneMode.Additive).completed += delegate(AsyncOperation operation)
+        {
+            playerstart = GameObject.FindWithTag("playerstart");
+            Instantiate(player, playerstart.transform.position, Quaternion.Euler(0, 0, 0));
+        };
     }
 
 }

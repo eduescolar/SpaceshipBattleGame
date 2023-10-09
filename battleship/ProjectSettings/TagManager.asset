@@ -9,6 +9,7 @@ TagManager:
   - meteor
   - EnemyBullet
   - barraDeEnergia
+  - playerstart
   layers:
   - Default
   - TransparentFX

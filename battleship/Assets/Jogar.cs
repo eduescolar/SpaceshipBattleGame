@@ -10,7 +10,7 @@ public class Jogar : MonoBehaviour
 
     public void jogar()
     {
-        SceneManager.LoadScene(level1);
+        GameManager.instance.LoadScene();
     }
 
     public void sair()
