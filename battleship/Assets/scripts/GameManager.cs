@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+   
     public int pontuacaoAtual;
     public GameObject painelDeGameover;
     public Text textoDeGameover;
@@ -70,6 +71,7 @@ public class GameManager : MonoBehaviour
 
         textoDeHighScore.text = "HIGHSCORE: " + PlayerPrefs.GetInt("highscore");
     }
+    
     
     [SerializeField] private string Scene1;
     [SerializeField] private string GUI;

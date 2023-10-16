@@ -11,8 +11,12 @@ public class gameController : MonoBehaviour
     public GameObject bullet;
     public Transform disparo;
     public bool laser;
-   
-    void Start()
+
+    private int points;
+    private int currentEnergy;
+    [SerializeField] private int maxEnergy;
+    
+        void Start()
     {
         laser = false;
     }
@@ -40,5 +44,20 @@ public class gameController : MonoBehaviour
                 Instantiate(bullet, disparo.position, disparo.rotation);
             }
         }
+    }
+
+    private void AddEnergy(int amount)
+    {
+        currentEnergy += amount;
+        if (currentEnergy > maxEnergy)
+        {
+            currentEnergy = maxEnergy;
+        }
+
+        if (currentEnergy <= 0)
+        {
+            currentEnergy = 0;
+        }
+
     }
 }

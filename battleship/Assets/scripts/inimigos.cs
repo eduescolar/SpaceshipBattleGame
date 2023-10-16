@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -8,6 +9,8 @@ using Random = UnityEngine.Random;
 
 public class inimigos : MonoBehaviour
 {
+    
+    
 
     public GameObject laserInimigo;
     public Transform localDeDisparo;
@@ -77,7 +80,9 @@ public class inimigos : MonoBehaviour
         }
 
     }
-
+    
+    
+    
     public void DanoCausadoNoInimigo(int danoRecebido)
     {
         vidaAtualInimigo -= danoRecebido;
